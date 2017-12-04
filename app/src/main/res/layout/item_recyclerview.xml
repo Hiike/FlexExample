@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/half_padding"
+    android:paddingEnd="@dimen/general_padding"
+    android:paddingStart="@dimen/general_padding"
+    android:paddingTop="@dimen/half_padding">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/string_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:dividerDrawable="@drawable/divider"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        app:showDivider="middle" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editer"
+        />
+</LinearLayout>
